@@ -1,0 +1,140 @@
+# Settings
+
+theme = "ayu_dark_v2"
+
+[editor]
+mouse = true                # マウスモードを有効にする
+line-number = "absolute"    # 絶対値の行番号の表示
+cursorline = true           # カーソル行をハイライトする
+auto-format = false         # 保存時、自動フォーマットをオフにする
+true-color = true           # フルカラー(24-bit)をサポートする
+bufferline = "always"       # バッファラインを常時表示する
+color-modes = true          # モードに応じて、色を変える
+text-width = 120            # 120文字で折り返す
+insert-final-newline = true # 保存時、最終行に空行を挿入する
+
+[editor.statusline]
+left = ["mode", "spinner", "file-name", "read-only-indicator", "file-modification-indicator"]
+center = []
+right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.lsp]
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[editor.auto-pairs]
+# '(' = ')'
+# '{' = '}'
+# '[' = ']'
+# '"' = '"'
+# '`' = '`'
+# "'" = "'"
+# '<' = '>'
+
+[editor.auto-save]
+
+[editor.search]
+
+[editor.whitespace]
+render = "all"
+
+[editor.whitespace.characters]
+space = "·"
+nbsp = "⍽"
+nnbsp = "␣"
+tab = "→"
+newline = "⏎"
+tabpad = "·"
+
+[editor.indent-guides]
+
+[editor.gutters]
+
+[editor.soft-wrap]
+enable = true
+max-wrap = 25
+max-indent-retain = 0
+wrap-indicator = ""
+
+# Key Remapping
+
+[keys.normal]
+
+# Disabled Keys
+up = "no_op"
+down = "no_op"
+left = "no_op"
+right = "no_op"
+pageup = "no_op"
+pagedown = "no_op"
+
+# Remapping Keys
+C-space = "keep_primary_selection"            # マルチカーソルの無効化
+C-s = ":w"                                    # Ctrl + s で保存
+C-w = ":buffer-close"                         # Ctrl + s でバッファを閉じる
+S-j = ":buffer-previous"                      # Shift + j で前のバッファに戻る
+S-k = ":buffer-next"                          # Shift + k で後のバッファに戻る
+A-k = "scroll_up"                             # Alt + k で上にスクロールする
+A-j = "scroll_down"                           # Alt + j で下にスクロールする
+C-A-up = "copy_selection_on_prev_line"        # Ctrl + Alt + up で上にマルチカーソル
+C-A-down = "copy_selection_on_next_line"      # Ctrl + Alt + down で下にマルチカーソル
+C-c = ":clipboard-yank"                       # Ctrl + c でクリップボードにコピー
+C-x = [":clipboard-yank", "delete_selection"] # Ctrl + x でクリップボードに切り取り
+C-z = "undo"                                  # 戻る
+C-y = "redo"                                  # 進む
+C-a = "select_all"                            # 全選択
+
+[keys.insert]
+
+# Disabled Keys
+up = "no_op"
+down = "no_op"
+left = "no_op"
+right = "no_op"
+pageup = "no_op"
+pagedown = "no_op"
+
+# Remapping Keys
+C-space = ["normal_mode", "keep_primary_selection"]          # ノーマルモードにする、マルチカーソルの無効化
+A-k = "scroll_up"                                            # Alt + k で上にスクロールする
+A-j = "scroll_down"                                          # Alt + j で下にスクロールする
+C-A-up = "copy_selection_on_prev_line"                       # Ctrl + Alt + up で上にマルチカーソル
+C-A-down = "copy_selection_on_next_line"                     # Ctrl + Alt + down で下にマルチカーソル
+C-k = "move_line_up"                                         # Ctrl + k で上移動
+C-j = "move_line_down"                                       # Ctrl + j で下移動
+C-h = "move_char_left"                                       # Ctrl + h で左移動
+C-l = "move_char_right"                                      # Ctrl + l で右移動
+C-z = "undo"                                                 # 戻る
+C-y = "redo"                                                 # 進む
+
+[keys.select]
+
+# Disabled Kyes
+up = "no_op"
+down = "no_op"
+left = "no_op"
+right = "no_op"
+pageup = "no_op"
+pagedown = "no_op"
+
+# Remapping Keys
+C-space = ["normal_mode", "keep_primary_selection"]          # ノーマルモードにする、マルチカーソルの無効化
+A-k = "scroll_up"                                            # Alt + k で上にスクロールする
+A-j = "scroll_down"                                          # Alt + j で下にスクロールする
+C-A-up = "copy_selection_on_prev_line"                       # Ctrl + Alt + up で上にマルチカーソル
+C-A-down = "copy_selection_on_next_line"                     # Ctrl + Alt + down で下にマルチカーソル
+C-c = [":clipboard-yank", "normal_mode"]                     # Ctrl + c でクリップボードにコピー
+C-x = [":clipboard-yank", "delete_selection", "normal_mode"] # Ctrl + x でクリップボードに切り取り、ノーマルモードに戻す
+C-z = "undo"                                                 # 戻る
+C-y = "redo"                                                 # 進む
+C-a = "select_all"                                           # 全選択
