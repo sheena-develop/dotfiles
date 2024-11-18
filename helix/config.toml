@@ -23,6 +23,7 @@ mode.insert = "INSERT"
 mode.select = "SELECT"
 
 [editor.lsp]
+display-messages = true
 
 [editor.cursor-shape]
 insert = "bar"
@@ -93,6 +94,8 @@ C-x = [":clipboard-yank", "delete_selection"] # Ctrl + x でクリップボー�
 C-z = "undo"                                  # 戻る
 C-y = "redo"                                  # 進む
 C-a = "select_all"                            # 全選択
+A-f = ":format"                               # フォーマット
+C-q = "toggle_comments"                       # コメントアウト
 
 [keys.insert]
 
@@ -116,6 +119,8 @@ C-h = "move_char_left"                                       # Ctrl + h で左�
 C-l = "move_char_right"                                      # Ctrl + l で右移動
 C-z = "undo"                                                 # 戻る
 C-y = "redo"                                                 # 進む
+A-f = ":format"                                              # フォーマット
+C-q = "toggle_comments"                                      # コメントアウト
 
 [keys.select]
 
@@ -138,3 +143,5 @@ C-x = [":clipboard-yank", "delete_selection", "normal_mode"] # Ctrl + x でク�
 C-z = "undo"                                                 # 戻る
 C-y = "redo"                                                 # 進む
 C-a = "select_all"                                           # 全選択
+A-f = ":format"                                              # フォーマット
+C-q = "toggle_comments"                                      # コメントアウト

@@ -8,7 +8,17 @@
 
 設定ファイルが存在しない場合は、ファイルを作成してください。<br/>
 ```
+mkdir .config
+mkdir .config/helix
+mkdir .config/themes
 touch .config/helix/config.toml
+touch .config/helix/language.toml
+```
+
+LSPのインストール
+```
+npm i -g @vue/language-server
+npm i -g typescript typescript-language-server
 ```
 
 Google IMEの使用を推奨します。<br/>

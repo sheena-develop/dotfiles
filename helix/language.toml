@@ -1,0 +1,20 @@
+[[language]]
+name = "typescript"
+language-servers = [ "typescript-language-server" ]
+formatter = { command = "npx", args = [ "prettier", "--parser", "typescript" ] }
+indent = { tab-width = 2, unit = "  " }
+comment-tokens = "//"
+
+[[language]]
+name = "vue"
+language-servers = [ "typescript-language-server", "@vue/language-server" ]
+formatter = { command = "npx", args = [ "prettier", "--parser", "vue" ] }
+indent = { tab-width = 2, unit = "  " }
+comment-tokens = "//"
+
+[[language]]
+name = "javascript"
+language-servers = [ "typescript-language-server" ]
+formatter = { command = "npx", args = [ "prettier", "--parser", "javascript" ] }
+indent = { tab-width = 2, unit = "  " }
+comment-tokens = "//"
