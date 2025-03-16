@@ -16,7 +16,10 @@ Normal mode, Space + w - バッファを閉じる
 
 <プラグイン>
 Normal mode, Ctrl + b - Neo-treeの表示をトグルする
-Normal mode, Ctrl + t - ToggleTermを使ってターミナル表示
+Normal mode, Ctrl + t - ToggleTermを使ってターミナル表示(float)
+Normal mode, Ctrl + 1 - ToggleTermを使ってターミナル表示1(horizontal)
+Normal mode, Ctrl + 2 - ToggleTermを使ってターミナル表示2(horizontal)
+Normal mode, Ctrl + 3 - ToggleTermを使ってターミナル表示3(horizontal)
 
 Normal mode, Space + lg - LazyGitを表示
   LazyGitがインストールされていること（https://github.com/jesseduffield/lazygit?tab=readme-ov-file#installation）

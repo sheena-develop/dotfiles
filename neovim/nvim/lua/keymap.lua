@@ -44,3 +44,12 @@ end, { nargs = "?" })
 
 -- ノーマルモードで、「f」を押すことで、HopWordを実行
 map("n", "f", "<Cmd>HopWord<CR>")
+
+-- ノーマルモードで、「Ctrl + t」を押すことで、ToggleTermをdirection=floatで実行
+map("n", "<C-t>", "<Cmd>ToggleTerm size=100 direction=float<CR>")
+-- ノーマルモードで、「Space + 1」を押すことで、ToggleTermをdirection=horizontalで実行
+map("n", "<Leader>1", "<Cmd>Neotree close<CR><Cmd>1ToggleTerm size=20 direction=horizontal<CR>")
+-- ノーマルモードで、「Space + 2」を押すことで、ToggleTermをdirection=horizontalで実行
+map("n", "<Leader>2", "<Cmd>Neotree close<CR><Cmd>2ToggleTerm size=20 direction=horizontal<CR>")
+-- ノーマルモードで、「Space + 3」を押すことで、ToggleTermをdirection=horizontalで実行
+map("n", "<Leader>3", "<Cmd>Neotree close<CR><Cmd>3ToggleTerm size=20 direction=horizontal<CR>")
