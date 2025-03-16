@@ -17,17 +17,18 @@ opt.list = true       -- 特殊文字を表示
 opt.listchars = {     -- 表示する特殊文字の設定
   tab = "▸-",
   trail = "·",
-  eol = "⏎"
+  eol = "⏎",
 }
 opt.title = true      -- タイトルを表示
 
 -- ===== 動作設定（補完や検索、マウス操作）=====
 
-opt.showcmd = true                    -- 入力中のコマンドを表示
-opt.wildmode = { "list", "longest" }  -- コマンドライン補完の設定
-opt.completeopt = { "menuone" }       -- 補完ウィンドウの設定
-opt.wrapscan = true                   -- 検索時、最後まで行ったら最初に戻る
-opt.mouse = "a"                       -- マウス操作を有効にする
+opt.showcmd = true                      -- 入力中のコマンドを表示
+opt.wildmode = { "list", "longest" }    -- コマンドライン補完の設定
+opt.completeopt = { "menuone" }         -- 補完ウィンドウの設定
+opt.wrapscan = true                     -- 検索時、最後まで行ったら最初に戻る
+opt.mouse = "a"                         -- マウス操作を有効にする
+opt.clipboard:append({ "unnamedplus" }) -- レジスタをシステムのクリップボードと同期させる
 
 -- ===== インデントとタブ設定 =====
 
